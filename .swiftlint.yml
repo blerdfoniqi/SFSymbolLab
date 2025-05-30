@@ -1,0 +1,48 @@
+# SwiftLint configuration for SF Symbol Lab
+# Docs: https://github.com/realm/SwiftLint
+
+included:
+  - SFSymbolLab
+  - SFSymbolLabTests
+
+excluded:
+  - .build
+  - DerivedData
+
+opt_in_rules:
+  - closure_spacing
+  - contains_over_first_not_nil
+  - empty_count
+  - explicit_init
+  - first_where
+  - redundant_nil_coalescing
+  - sorted_first_last
+  - toggle_bool
+  - unneeded_parentheses_in_closure_argument
+
+line_length:
+  warning: 140
+  error: 250
+  ignores_comments: true
+  ignores_urls: true
+
+trailing_whitespace:
+  ignores_empty_lines: true
+  ignores_comments: true
+
+type_body_length:
+  warning: 400
+  error: 600
+
+file_length:
+  warning: 500
+  error: 800
+  ignore_comment_only_lines: true
+
+identifier_name:
+  min_length:
+    warning: 2
+  excluded:
+    - id
+
+reporter: "xcode"

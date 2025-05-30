@@ -1,0 +1,51 @@
+name: Bug report
+description: Report a problem with SF Symbol Lab
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to file a bug! Please fill out the sections below.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+      placeholder: When I …
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the Playground demo
+        2. Type …
+        3. See …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: xcode
+    attributes:
+      label: Xcode version
+      placeholder: "16.2"
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform (device or simulator + OS)
+      placeholder: "iPhone 15 simulator, iOS 17.5"
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or additional context
+    validations:
+      required: false

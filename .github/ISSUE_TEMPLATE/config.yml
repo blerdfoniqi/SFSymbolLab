@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: SF Symbols documentation
+    url: https://developer.apple.com/sf-symbols/
+    about: Apple's official SF Symbols resources and the SF Symbols app.
